@@ -1,0 +1,308 @@
+main,header,footer{
+    min-width: 1200px;
+}
+header{
+    height: 45rem;
+    background: url("../images/personageBg.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.nav{
+    height: 5rem;
+    margin-top: 3rem;
+}
+.nav img{
+    width: 1.8rem;
+    margin-top: 0.5rem;
+}
+.nav a{
+    color: white;
+    line-height: 2.8rem;
+}
+.nav-bar{
+    float: right;
+    margin-right: 5%;
+    position: relative;
+}
+.nav-bar li{
+    float: left;
+    margin: 0 2rem;
+}
+.float-nav{
+    visibility: hidden;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -3.2em;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: whitesmoke;
+}
+.float-nav>li{
+    display: block;
+    width: 6em;
+    padding: 0 1rem;
+}
+.float-nav>li:hover{
+    color: greenyellow;
+}
+.nav-bar a:last-child{
+    height: 100%;
+}
+.nav-bar a:last-child:hover>.float-nav{
+    visibility: visible;
+}
+.person-page{
+    width: 40%;
+    height: 17rem;
+    border: 0.5rem solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.person-title{
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 2.0;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.person-id{
+    text-align: center;
+    color: greenyellow;
+    margin-top: 0.5rem;
+}
+.person-id a{
+    color: white;
+}
+.person-signture{
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 6rem;
+}
+main{
+    margin-top: 8rem;
+}
+main hr{
+    width: 8rem;
+    background-color: black;
+    margin: 2rem auto;
+    border-bottom: none;
+    border-width: 1px;
+    border-color: black;
+}
+.main-title{
+    color: black;
+    text-shadow: 2px 2px 3px gray;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.person-information,.information-manager{
+    width: 46%;
+    float: left;
+    padding: 2%;
+    height: 15rem;
+}
+.person-information input,.person-information label{
+    border: none;
+    font-family: "Microsoft JhengHei UI", Segoe, Arial, sans-serif;
+    background-color: white;
+}
+.person-information label{
+    font-weight: bold;
+    width: 20%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-left: 10%;
+}
+.password-check{
+    display: none !important;
+}
+.person-information input{
+    width: 60%;
+    outline: 0;
+}
+.person-information button{
+    border: none;
+    margin-left: 10%;
+    background-color: transparent;
+    cursor: pointer;
+    color: coral;
+    outline: 0;
+}
+.person-information button:hover{
+    color: orange;
+}
+.information-manager img{
+    width: 1rem;
+}
+#checkword-label{
+    visibility: hidden;
+}
+.person-information #checkword,.person-information button{
+    visibility: hidden;
+}
+.famous-author{
+    height: 40rem;
+    background-color: orangered;
+    margin-top: 5rem;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+.famous-author .main-title{
+    color: white;
+    margin-top: 2rem;
+}
+.famous-container{
+    width: 100%;
+}
+.famous-information{
+    float: left;
+    width: 20%;
+    margin: 0 2%;
+    height: 27rem;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+.famous-information>img{
+    width: 94%;
+    margin: 10px 3%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.famous-information>p{
+    font-size: 1.2rem;
+    padding: 0 8%;
+    font-weight: bold;
+}
+.famous-information>img+p+p{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.famous-contact{
+    width: 100%;
+    padding: 0 8%;
+    position: absolute;
+    bottom: 20px;
+}
+.famous-contact>span{
+    width: 30%;
+    display: inline-block;
+}
+.famous-contact>span>img{
+    width: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.myProduects{
+    margin-top: 5rem;
+}
+.products-container{
+    /*height: 60rem;*/
+    padding-bottom: 2rem;
+}
+.products-container>div{
+    float: left;
+    height: 18rem;
+    width: 31%;
+    margin: 0.7rem 1% 0;
+    cursor: pointer;
+}
+.products{
+    transition: 0.8s;
+}
+.products:hover{
+    background-size: 110% 110% !important;
+    background-position: center !important;
+    transition: 0.8s;
+}
+.products:hover .myProduects-nav{
+    display: block;
+}
+.myProduects-nav{
+    display: none;
+    height: 1.5rem;
+    width: 100%;
+    background-color: ghostwhite;
+    cursor: pointer;
+    margin-top: 16.5rem;
+}
+.complete{
+    width: 2em;
+    float: right;
+    display: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.myProduects-nav>li{
+    float: left;
+    margin: 0 10px;
+    color: black;
+    font-size: 0.8rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    line-height: 1.5rem;
+}
+.myProduects-nav>li:last-child{
+    visibility: hidden;
+    background-color: whitesmoke;
+    display: block;
+    position: relative;
+    width: 100%;
+    left: -10px;
+}
+.product-information img{
+    width: 1rem;
+    float: right;
+    margin: 0 5px;
+}
+.product-information>form{
+    display: block;
+    background-color: ghostwhite;
+    padding: 2%;
+    width: 96%;
+    color: black;
+    padding-bottom: 2rem;
+    opacity: 1 !important;
+}
+.product-information label{
+    font-weight: bold;
+    margin-right: 1rem;
+    width: 4em;
+    display: inline-block;
+    margin-top: 7px;
+}
+.product-information input{
+    text-indent: 5px;
+    outline: 0;
+    width: 10rem;
+}
+.product-information select{
+    width: 5rem;
+}
+footer{
+    height: 10rem;
+    background-color: gray;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+footer p{
+    color: white;
+    line-height: 2.0;
+    text-indent: 1em;
+}
+footer p:first-child{
+    margin-top: 3rem;
+}

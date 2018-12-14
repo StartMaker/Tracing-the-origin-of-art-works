@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link href="images/logo.png" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/setlogin.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/setlogin.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <form>
+                <div>
+                    <span>账密验证</span>
+                    <p>|</p>
+                    <span id="register_form">注册账号</span>
+                </div>
+                <div>
+                    <div>账号</div><input type="email" id="email" name="username"/>
+                </div>
+                <div>
+                    <div>密码</div><input type="password" id="password" name="password"/>
+                </div>
+                <div>
+                    <div>验证码</div><input type="text" id="check_checkword"/>
+                </div>
+                <div id="checkword">获取验证码</div>
+                <div id="warn"></div>
+                <div><button type="button" id="login">登录</button></div>
+                <div id="forgetPassword">忘记密码</div>
+            </form>
+            <form id="regist_form" target="nm_iframe">
+                <div>
+                    <span  id="login_form">账密验证</span>
+                    <p>|</p>
+                    <span>注册账号</span>
+                </div>
+                <div>
+                    <div>邮箱</div><input type="email" id="register_email"/>
+                </div>
+                <div>
+                    <div>密码</div><input type="password"  id="register_password"/>
+                </div>
+                <div>
+                    <div>确认密码</div><input type="password"/>
+                </div>
+                <div>
+                    <div>验证码</div><input type="text"  id="register_check"/>
+                </div>
+                <button id="register_checkword" type="button">获取验证码</button>
+                <div id="register_warn"></div>
+                <div><button  id="register" type="button">注册</button></div>
+            </form>
+            <iframe name="nm_iframe" style="display:none;"></iframe>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link href="images/logo.png" type="image/x-icon" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" type="text/javascript"></script>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/newHomepage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/reset.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <title>数字作品</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container-fluid clearfix">
+                <img src="images/logo.png" class="logo" title="艺术作品溯源" alt="艺术作品溯源"/>
+                <ul class="inline-list nav-list">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="auction.html">拍卖区</a></li>
+                    <li><a href="store.html">直购区</a></li>
+                    <li><a href="#">非卖区</a></li>
+                    <li><a href="personage.html">个人仓库</a></li>
+                    <li><a href="login.html"><img src="images/user.png"></a><a href="shoppingCart.html"><img src="images/buy.png"/></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <ul class="rolling-column">
+                    <li class="rolling-theme"><img src="images/theme1.png"/></li>
+                    <li class="rolling-theme"><img src="images/theme2.png"/></li>
+                    <li class="rolling-theme"><img src="images/theme3.png"/></li>
+                    <li class="rolling-theme"><img src="images/theme4.png"/></li>
+                    <li class="rolling-theme"><img src="images/theme5.jpg"/></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="rolling-order">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container-middle">
+            <div class="clearfix view">
+                <span class="view-title"><strong>推荐/CATEGORY</strong></span>
+                <span><a href="##"><small>更多</small></a></span>
+                <dd class="view-class">
+                    <dl><a href="##" class="active">油画</a></dl>
+                    <dl><a href="##">山水画</a></dl>
+                    <dl><a href="##">版画</a></dl>
+                    <dl><a href="##">水墨画</a></dl>
+                </dd>
+            </div>
+            <div class="view-products">
+                <ul class="clearfix">
+                    <li><a href="##">
+                        <div class="view-picture"></div>
+                        <div class="view-information"></div>
+                    </a></li>
+                    <li><a href="##">
+                        <div class="view-picture"></div>
+                        <div class="view-information"></div>
+                    </a></li>
+                    <li><a href="##">
+                        <div class="view-picture"></div>
+                        <div class="view-information"></div>
+                    </a></li>
+                    <li><a href="##">
+                        <div class="view-picture"></div>
+                        <div class="view-information"></div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container-middle">
+            <div class="new">
+                <span class="new-title"><strong>最新上架</strong>/new</span>
+                <span><a href="##" id="newFlush"><small>换一换</small></a></span>
+            </div>
+            <div>
+                <ul class="new-products clearfix">
+                    <li class="new-container">
+                        <a href="##" class="newA">
+                            <div class="new-information"></div>
+                        </a>
+                    </li>
+                    <li class="new-container">
+                        <a href="##" class="newA">
+                            <div class="new-information"></div>
+                        </a>
+                    </li>
+                    <li class="new-container">
+                        <a href="##" class="newB">
+                <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                    </li>
+                    <li class="new-container">
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                        <a href="##" class="newB">
+                            <div class="new-information"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="categoryFind clearfix">
+                <article>
+                    <div class="categoryFind-col">
+                        <p>现在，去探索全新的艺术世界</p>
+                    </div>
+                    <div class="categoryFind-col">
+                        <ul class="clearfix">
+                            <li>
+                                <select class="category">
+                                    <option value="">类别</option>
+                                    <option value="油画">油画</option>
+                                    <option value="版画">版画</option>
+                                    <option value="水墨画">水墨画</option>
+                                    <option value="水彩画">水彩画</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select class="category">
+                                    <option value="0&9999999">价格</option>
+                                    <option value="0&2000">￥2000以下</option>
+                                    <option value="2000&8000">￥2000-￥8000</option>
+                                    <option value="8000&15000">￥8000-￥15000</option>
+                                    <option value="15000&40000">￥15000-￥40000</option>
+                                    <option value="40000&999999">￥40000以上</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select class="category">
+                                    <option value="0&99999999">尺寸</option>
+                                    <option value="0&50">50cm以下</option>
+                                    <option value="50&75">50-75cm</option>
+                                    <option value="75&100">75-100cm</option>
+                                    <option value="100&9999999">100cm以上</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select class="category">
+                                    <option value="">风格</option>
+                                    <option value="抽象">抽象</option>
+                                    <option value="观念">观念</option>
+                                    <option value="卡通">卡通</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categoryFind-col">
+                        <p>前往艺术的殿堂！</p>
+                    </div>
+                </article>
+                <article class="startFind clearfix">
+                    <div>
+                        <p>开始</p>
+                        <p>GO</p>
+                    </div>
+                    <div>
+                        <p>开始</p>
+                        <p>GO</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="container-middle">
+            <div class="insight">
+                <span class="insight-title"><strong>艺术视野/INSIGHT</strong></span>
+                <span><a href="##"><small>更多</small></a></span>
+            </div>
+            <div class="insight-col clearfix">
+                <span class="insight-bg"></span>
+                <span class="insight-bg"></span>
+                <span class="insight-information">
+                    <p>华彬未来之星青少年高尔夫系列赛（简称“华彬未来之星赛”）</p>
+                    <p>————</p>
+                    <p>华彬未来之星青少年高尔夫系列赛（简称“华彬未来之星赛”）作为目前我国最高小组别的青少年高尔夫系列赛之一，是由国家体育总局小球运动管理中心</p>
+                </span>
+                <span class="insight-information">
+                    <p>华彬未来之星青少年高尔夫系列赛（简称“华彬未来之星赛”）</p>
+                    <p>————</p>
+                    <p>华彬未来之星青少年高尔夫系列赛（简称“华彬未来之星赛”）作为目前我国最高小组别的青少年高尔夫系列赛之一，是由国家体育总局小球运动管理中心</p>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="container-middle">
+            <p>制作团队：UChain</p>
+            <p>设计：彭媛媛</p>
+            <p>制作：李天鹏</p>
+        </div>
+    </footer>
+</body>
+</html>

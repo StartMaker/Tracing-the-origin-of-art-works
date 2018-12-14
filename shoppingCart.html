@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link href="images/logo.png" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/shoppingCart.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/web3js.js"></script>
+    <script src="js/shoppingCart.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="images/logo.png" style="width:20px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse clearfix">
+                <ul class="nav navbar-nav nav_list">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li><a href="#">拍卖区</a></li>
+                    <li><a href="store.html">直购区</a></li>
+                    <li><a href="#">非卖区</a></li>
+                    <li><a href="personage.html">个人仓库</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav_user">
+                    <li><a href="login.html" id="userId"><img src="images/user.png" style="width: 20px;"></a></li>
+                    <li><a href="shoppingCart.html"><img src="images/buy.png" style="width: 20px;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <p>我的购物车</p>
+            <aside>
+                <img src="images/choose.png" id="chooseAll" class="chooseImg" value="no"><p class="chooseContent">全选</p>
+            </aside>
+            <div class="shoppingCart clearfix">
+            </div>
+        </div>
+        <div class="container">
+            <div class="clearfix">
+                <span>
+                    <span id="chooseNumber">已选商品0件</span>
+                    <span id="choosePrice">￥0</span>
+                </span>
+                <span id="deal">结算</span>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

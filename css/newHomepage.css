@@ -1,0 +1,423 @@
+header,nav,footer{
+    min-width: 900px;
+}
+main{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    height: 3rem;
+    border-bottom: 1px solid lightslategray;
+    box-shadow: 0.09rem 0.09rem 0.09rem gray;
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+    top: 0rem;
+    z-index: 3;
+}
+.logo{
+    float: left;
+    margin-top: 0.6rem;
+    width: 1.8rem;
+    margin-left: calc(5%);
+}
+.active,.active:hover{
+    color: black;
+    opacity: 1;
+    text-decoration: none !important;
+    pointer-events: none;
+    font-weight: bold;
+}
+.nav-list>li:first-child{
+    margin-left: calc(10%);
+}
+.nav-list>li>a{
+    line-height: 3rem;
+    font-size: 1.12rem;
+    font-weight: bold;
+    padding: 0 0.8rem;
+    text-align: center;
+    display: block;
+}
+.nav-list:hover{
+    color: black;
+}
+.nav-list>li:last-child{
+    float: right;
+    margin-right: calc(10%);
+}
+.nav-list>li:last-child>a{
+    display: inline;;
+}
+.nav-list>li:last-child img{
+    height: 1.5rem;
+    margin-top: 0.75rem;
+}
+main>section{
+    height: calc(66.666%);
+    min-height: 440px;
+}
+.rolling-column{
+    margin-top: 3.2rem;
+    position: relative;
+    z-index: 2;
+}
+.rolling-column img{
+    height: calc(66.666%);
+    min-height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.rolling-theme{
+    opacity: 0;
+    transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+}
+.rolling-order{
+    position: relative;
+    display: block;
+    height: 1rem;
+    width: 10rem;
+    background-color: whitesmoke;
+    z-index: 2;
+    padding: 0.3rem 1.8rem;
+    opacity: 0.8;
+    border-radius: 0.7rem;
+    top: 18rem;
+    left: 75%;
+}
+.rolling-order>li{
+    opacity: 1.5;
+    width: 1rem;
+    margin: 0 0.3rem;
+    border-radius: 0.5rem;
+    height: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+}
+.search-form{
+    margin-bottom: 4rem;
+    width: 15rem;
+    padding: 10px 30px;
+    float: right;
+    margin-right: 1rem;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.search-form input{
+    width: 10.8rem;
+    line-height: 2.0;
+    border: none;
+    background-color: white;
+    text-indent: 1em;
+    outline: 0;
+    height: 2rem;
+}
+.search-form img{
+    width: 1.2em;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    cursor: pointer;
+}
+.view{
+    border-bottom: 1px solid lightgray;
+}
+.view-title{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: calc(4.5%);
+    margin-right: calc(5%);
+}
+.view-class{
+    float: right;
+    margin-right: calc(10%);
+}
+.view-class>dl{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.view-class>dl>a{
+    display: block;
+    position: relative;
+    border: 1px solid white;
+    padding: 0.7rem 1rem;
+}
+.view-products{
+    margin-top: 2rem;
+}
+.view-products li{
+    float: left;
+    min-height: 375px;
+    height: calc(50vh);
+    width: 23%;
+    margin: 0 1%;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 1px whitesmoke;
+}
+.view-products li:last-child{
+    overflow: hidden;
+}
+.view-products>ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+.view-products>ul a:hover{
+    background-color: whitesmoke;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+a:hover>.view-picture{
+    background-size: 110% 110% !important;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+.view-picture{
+    height: 75%;
+    width: 100%;
+    transition: 0.8s;
+}
+.view-information{
+    margin-top: 0.5rem;
+}
+.view-information p{
+    text-indent: 20px;
+    font-weight: lighter;
+    font-size: small;
+}
+.view-information p:first-child,.view-information p:last-child{
+    font-weight: bold;
+    font-family: '微软雅黑', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.new-title{
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin-left: calc(4.5%);
+    margin-right: calc(5%);
+}
+.new{
+    margin-top: 3rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 0.7rem;
+}
+.new-products{
+    margin-top: 3rem;
+}
+.new-container{
+    width: 23%;
+    margin: 0 1%;
+    display: block;
+    height: 276px;
+    float: left;
+}
+.new-container:last-child{
+    overflow: hidden;
+}
+.new-container a{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica', 'STHeitiSC-Light', 'Arial', 'sans-serif' !important;
+    box-shadow: 1px 1px 2px 3px whitesmoke;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+.new-information>p:first-child{
+    padding-top: 50%;
+    position: relative;
+    top: -4em;
+    margin-bottom: -4em;
+}
+.new-container a>.new-information{
+    visibility: hidden;
+}
+a:hover>.new-information{
+    display: block;
+    visibility: visible;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    color: white;
+}
+.newA{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+.newB{
+    width: 48%;
+    height: 48%;
+    margin: 1% 0.5%;
+    font-size: 0.7rem;
+}
+.newA:hover,.newB:hover{
+    background-size: 110% 110% !important;
+    background-position: center !important;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+.categoryFind{
+    background-color: #555555;
+    height: 18rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 5rem;
+}
+.categoryFind>article:first-child{
+    margin-left: 10%;
+    width: 65%;
+}
+.categoryFind>article{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.categoryFind-col{
+    height: 33.333%;
+}
+.categoryFind-col:first-child{
+    font-size: 2rem;
+    color: white;
+}
+.categoryFind-col:first-child>p{
+    line-height: 5rem;
+}
+.categoryFind-col li{
+    float: left;
+    width: 22%;
+}
+.category{
+    height: 2.7rem;
+    display: block;
+    width: 80%;
+    border-radius: 7px;
+    text-indent: 1em;
+    margin-top: 0.5rem;
+}
+.category>option{
+    text-indent: 2em;
+}
+.categoryFind-col:last-child{
+    color: white;
+    font-size: 1.1rem;
+}
+.startFind>div{
+    float: left;
+    cursor: pointer;
+    height: 12rem;
+    transition: width 0.8s;
+    -webkit-transition: width 0.8s;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    padding-top: 6rem;
+}
+.startFind>div:first-child{
+    width: 0;
+    font-size: 0;
+    background-color: orange;
+}
+.startFind>div:last-child{
+    background-color: black;
+    font-size: 2rem;
+    width: 100%;
+}
+.startFind:hover>div:first-child{
+    width: 100%;
+    font-size: 2rem;
+    transition: width 0.8s;
+    -webkit-transition: width 0.8s;
+}
+.startFind:hover>div:last-child{
+    width: 0;
+    font-size: 0;
+    transition: width 0.8s;
+    -webkit-transition: width 0.8s;
+}
+.startFind p:first-child{
+    line-height: 1.0;
+}
+.insight-title{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: calc(4.5%);
+    margin-right: calc(5%);
+}
+.insight-col{
+    margin-top: 3.5rem;
+}
+.insight-col>span{
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 0 1%;
+    box-shadow: 1px 1px 2px 3px whitesmoke;
+    height: 18rem;
+}
+.insight-information{
+    height: 9rem !important;
+}
+.insight-information>p:first-child{
+    font-size: 1.23rem;
+    line-height: 1.0;
+    margin-top: 0.5rem;
+    text-indent: 1em;
+    text-align: left;
+}
+.insight-information>p{
+    text-align: center;
+    margin: 0.5rem auto;
+}
+.insight-information>p:last-child{
+    text-indent: 1em;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+.insight-bg:first-child{
+    background: url("../images/insight.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.insight-bg{
+    background: url("../images/insight2.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    cursor: pointer;
+}
+.insight-bg:hover{
+    background-size: 110% 110%;
+    -webkit-background-size: 110% 110%;
+    background-position: center;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+footer{
+    height: 10rem;
+    background-color: gray;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+footer p{
+    color: white;
+    line-height: 2.0;
+    text-indent: 1em;
+}
+footer p:first-child{
+    margin-top: 3rem;
+}

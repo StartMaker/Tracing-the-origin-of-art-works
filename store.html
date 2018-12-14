@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直购区</title>
+    <link href="images/logo.png" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/store.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/store.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="images/logo.png" style="width:20px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse clearfix">
+                <ul class="nav navbar-nav nav_list">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li><a href="auction.html">拍卖区</a></li>
+                    <li class="active"><a href="##">直购区</a></li>
+                    <li><a href="#">非卖区</a></li>
+                    <li><a href="personage.html">个人仓库</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav_user">
+                    <li><a href="login.html" id="userId"><img src="images/user.png" style="width: 20px;"></a></li>
+                    <li><a href="shoppingCart.html"><img src="images/buy.png" style="width: 20px;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <span>
+                <div class="PriceAndSize_list">
+                    <p>价格</p>
+                    <ul id="Price">
+                        <li value="0~￥2000"></li>
+                        <li value="￥2000~￥4000"></li>
+                        <li value="￥4000~￥8000"></li>
+                        <li value="￥8000~￥15000"></li>
+                        <li value="￥15000~max"></li>
+                    </ul>
+                    <ul>
+                        <li>0</li>
+                        <li>￥2000</li>
+                        <li>￥4000</li>
+                        <li>￥8000</li>
+                        <li>￥15000</li>
+                        <li>max</li>
+                    </ul>
+                </div>
+                <div class="PriceAndSize_list">
+                    <p>尺寸</p>
+                     <ul id="Size">
+                        <li value="0~50cm"></li>
+                        <li value="50cm~100cm"></li>
+                        <li value="100cm~150cm"></li>
+                        <li value="150cm~200cm"></li>
+                        <li value="200cm~max"></li>
+                    </ul>
+                    <ul>
+                        <li>0</li>
+                        <li>50cm</li>
+                        <li>100cm</li>
+                        <li>150cm</li>
+                        <li>200cm</li>
+                        <li>max</li>
+                    </ul>
+                </div>
+            </span>
+            <span>
+                <ul class="Classity_StyleAndTheme">
+                    <li>分类
+                        <ul id="Classity">
+                            <li value="油画">油画</li>
+                            <li value="版画">版画</li>
+                            <li value="水墨">水墨</li>
+                            <li value="水彩">水彩</li>
+                            <li value="其他">其他</li>
+                        </ul>
+                    </li>
+                    <li>风格
+                        <ul id="Style">
+                            <li value="抽象">抽象</li>
+                            <li value="观念">观念</li>
+                            <li value="卡通">卡通</li>
+                            <li value="传统">传统</li>
+                            <li value="其他">其他</li>
+                        </ul>
+                    </li>
+                    <li>主题
+                        <ul id="Theme">
+                            <li value="风景">风景</li>
+                            <li value="人物">人物</li>
+                            <li value="静物">静物</li>
+                            <li value="动物">动物</li>
+                            <li value="其他">其他</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+            <span id="explain">
+                <div>
+                    <p>风景<br/>Landscape</p>
+                    <p>风景的概念起源于绘画，人类的绘画早先是动物，然后是人类自己，最早有记载的单纯的风景是中国晋代的子虔的《游春图》，以后中国画中的风景画被称为山水画</p>
+                </div>
+            </span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form class="container search">
+                <span id="property">
+                </span>
+                <label for="search">
+                    <img src="images/search.png"/>
+                </label>
+                <input type="text" id="search" placeholder="输入艺术家或者艺术品"/>
+            </form>
+        </section>
+        <section class="container">
+            <p>艺术溯源>直购区</p>
+            <!--<select id="sort_time">-->
+                <!--<option>上架时间</option>-->
+                <!--<option>最新上架</option>-->
+                <!--<option>最早上架</option>-->
+            <!--</select>-->
+            <!--<select id="sort_price">-->
+                <!--<option>价格</option>-->
+                <!--<option>从高到低</option>-->
+                <!--<option>从低到高</option>-->
+            <!--</select>-->
+        </section>
+        <section class="container">
+            <div id="picture_list">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <ul class="pagination paging">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            团队：Uchina<br/>
+            策划设计：彭媛媛<br/>
+            制作：李天鹏<br/>
+            名称：艺术作品溯源
+        </div>
+    </footer>
+</body>
+</html>

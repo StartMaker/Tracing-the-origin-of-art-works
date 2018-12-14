@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1200px){
+    nav,main{
+        width: 1205px;
+    }
+    html,body{
+        overflow-x: auto !important;
+    }
+}
+ul,li{
+    list-style: none;
+}
+html,body{
+    overflow-x: hidden;
+}
+body,header,main,section{
+    min-width: 1205px;
+}
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+img,a{
+    overflow: hidden;
+}
+nav{
+    min-width: 1205px;
+    position: fixed !important;
+    width: 100%;
+}
+.navbar-header{
+    margin-left: 5% !important;
+}
+.nav_list{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: 5%;
+}
+.nav_user{
+    margin-right: 5% !important;
+}
+.nav_input{
+    border: none;
+    outline: 0;
+}
+header{
+    margin-top: 150px;
+    height: ;
+}
+header>div>p{
+    display: block;
+    width:70%;
+    margin: 0 15%;
+    font-weight: bolder;
+    font-size: 2rem;
+    border-bottom: 1px solid darkgray;
+    line-height: 2.2;
+}
+header>div>aside{
+    width: 70%;
+    margin: 0 15%;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    font-size: 1rem;
+}
+.chooseImg{
+    height: 1.4rem;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+.chooseContent{
+    display: inline-block;
+    line-height: 1.0;
+    text-indent: 0.4rem;
+    font-size: 1.4rem;
+}
+.shoppingCart{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+    height: auto;
+    margin-bottom: 50px;
+}
+.shoppingCart>div{
+    width: 100%;
+    outline: 2px solid black;
+    height: calc(15vh);
+    padding: 0;
+    margin-top: 40px;
+}
+.shoppingCart>div>img{
+    margin-top: calc(6.5vh);
+    margin-left: 2rem;
+}
+.shoppingCart>div>div{
+    height: calc(10vh);
+    width: calc(10vh);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: calc(2.5vh);
+    background-size: 110% 110% !important;
+    background-position: center;
+}
+.shoppingCart>div>ul{
+    display: inline-block;
+    margin-top: calc(2.5vh);
+    width: 200px ;
+    height: calc(10vh);
+    vertical-align: top;
+    margin-left: 25px;
+}
+.shoppingCart>div>ul>li:first-child{
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.shoppingCart>div>ul>li+li{
+    font-size: 1rem;
+    color: darkgray;
+}
+.shoppingCart>div>span{
+    width: calc(10vh);
+    height: calc(15vh);
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    text-align-last: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.shoppingCart button{
+    border: none;
+    background-color: white;
+    margin-top: calc(8vh);
+    color: darkgray;
+    font-size: 1rem;
+    display: none;
+}
+.shoppingCart:hover>div>span>button{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    outline: 0;
+}
+header>div+div>div{
+    background-color: whitesmoke;
+    width: 70% !important;
+    margin-left: 15%;
+    height: calc(7vh);
+}
+header>div+div>div>span:first-child{
+    width: 80%;
+    background-color: whitesmoke;
+    line-height: calc(7vh);
+    margin-left: 3rem;
+}
+header>div+div>div>span+span{
+    width: 20%;
+    height: calc(7vh);
+    display: inline-block;
+    background-color: darkgray;
+    float: right;
+    color: white;
+    text-align: center;
+    text-align-last: center;
+    line-height: calc(7vh);
+    cursor: pointer;
+}
+#choosePrice{
+    margin-left: 20rem;
+    color: orange;
+}
+#deal:hover{
+    transition-duration: 0.75s;
+    background-color: orange;
+}

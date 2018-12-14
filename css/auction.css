@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1200px){
+    nav,main{
+        width: 1205px;
+    }
+    html,body{
+        overflow-x: auto !important;
+    }
+}
+ul,li{
+    list-style: none;
+}
+html,body{
+    overflow-x: hidden;
+}
+body,header,main,section{
+    min-width: 1205px;
+}
+img,a{
+    overflow: hidden;
+}
+nav{
+    min-width: 1205px;
+    position: fixed !important;
+    width: 100%;
+}
+.navbar-header{
+    margin-left: 5% !important;
+}
+.nav_list{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: 5%;
+}
+.nav_user{
+    margin-right: 5% !important;
+}
+.nav_input{
+    border: none;
+    outline: 0;
+}
+header>div{
+    display: flex;
+    margin-top: 60px;
+}
+header>div>span{
+    flex: 2;
+    height: calc(30vh);
+}
+header>div>span+span{
+    flex: 1;
+}
+.PriceAndSize_list{
+    height: 50%;
+    padding-top: 50px;
+}
+.PriceAndSize_list>p{
+    font-weight: bolder;
+}
+.PriceAndSize_list>ul{
+    display: block;
+}
+.PriceAndSize_list>ul>li{
+    display: inline-block;
+    background-color: lightgray;
+    height: 1em;
+    width: 17%;
+    cursor: pointer;
+}
+.PriceAndSize_list>ul>li:hover{
+    background-color: darkgray;
+}
+.PriceAndSize_list>ul+ul{
+    margin-top: -10px;
+}
+.PriceAndSize_list>ul+ul>li{
+    width: 8%;
+    font-size: 0.5rem;
+    background-color: white;
+}
+.PriceAndSize_list>ul+ul>li:hover{
+    background-color: white;
+}
+.PriceAndSize_list>ul+ul>li+li{
+    margin-left: 6.5%;
+}
+.PriceAndSize_list>ul+ul>li+li+li+li{
+    margin-left: 9%;
+}
+.PriceAndSize_list>ul+ul>li+li+li+li+li+li{
+    margin-left: 11%;
+}
+.Classity_StyleAndTheme{
+    display: block;
+    margin-left: 10%;
+    padding-top: 45px;
+    min-width: 210px;
+}
+.Classity_StyleAndTheme>li{
+    display: inline-block;
+    width: 32%;
+    font-weight: bolder;
+    text-indent: 0.6em;
+}
+.Classity_StyleAndTheme>li>ul{
+    margin-top: 15px;
+    border-left: 1px solid whitesmoke;
+}
+.Classity_StyleAndTheme>li>ul>li{
+    font-weight: lighter;
+    margin-top: 5px;
+    cursor: pointer;
+    text-indent: 0;
+    width: 3em;
+    padding: 3px;
+    text-align: center;
+}
+.Classity_StyleAndTheme>li>ul>li:hover{
+    background-color: whitesmoke;
+}
+#explain{
+    padding: 5px;
+    margin-top: 30px;
+}
+#explain>div{
+    color: white;
+    padding: 10px;
+    width: 90%;
+    height: calc(25vh);
+    background: url("../images/store_theme.jpg");
+    background-size: cover;
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+#explain>div>p:first-child{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+}
+main>section:first-child{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.search>label>img{
+    width: 15px;
+}
+.search>input{
+    border: none;
+    outline: 0;
+    text-indent: 0.5em;
+}
+#property{
+    border-right: 1px solid darkgray;
+    margin-right: 10px;
+    display: inline-block;
+    height: 100%;
+}
+#property>span{
+    background-color:gray;
+    color: white;
+    display: none;
+    padding:5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#property>#property_reset{
+    margin-right: 10px;
+    background-color: white;
+    color: gray;
+}
+main>section>p{
+    text-align: left;
+    text-indent: 3em;
+    font-size: 0.75em;
+    line-height: 5.0;
+    margin-left: -100px;
+}
+main>section>select{
+    margin-left: 80%;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 10rem;
+    text-align: center;
+    text-align-last: center;
+    border: 1px solid lightgray;
+    outline: 0;
+}
+main>section>select+select{
+    margin-left: 10px;
+}
+#picture_list{
+    min-width: 1000px;
+    display: flex;
+    margin-top: 50px;
+}
+#picture_list>span{
+    flex: 1;
+}
+#picture_list>span>img{
+    max-width: 70%;
+    max-height: calc(40vh);
+    margin-left: 15%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#picture_list>span>div{
+    width: 70%;
+    margin: 0 15%;
+    margin-top: 13px;
+}
+#picture_list>span>div>p:first-child{
+    font-weight: bolder;
+    text-indent: 2rem;
+}
+#picture_list>span>div>p+p{
+    font-style: italic;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-indent: 2rem;
+}
+#picture_list>span>div>p+p+p+p{
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 2.5;
+}
+.paging{
+    width: 24rem;
+    position: relative;
+    margin-left: 50% !important;
+    left: -12rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+footer{
+    height: calc(20vh);
+    background-color: whitesmoke;
+    width: 100%;
+}
+footer>div{
+    line-height: 2.0;
+    padding-top: 20px;
+}
